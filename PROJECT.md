@@ -30,7 +30,7 @@ Các ngưỡng 95%, CER 2%, p95 2 giây, 100 trang, giảm chụp lại 15% chư
 
 ## Non-goals
 
-Không tự triển khai roadmap, phát hành, chọn license sản phẩm, thêm X-Agents,
+Không tự triển khai roadmap, phát hành, đổi license sản phẩm (MIT, chủ repo chọn 2026-11-16), thêm X-Agents,
 bắt buộc tài khoản/cloud/billing hoặc gọi AI API trả phí.
 
 ## Guardrails và quyết định mở
@@ -39,7 +39,7 @@ bắt buộc tài khoản/cloud/billing hoặc gọi AI API trả phí.
 không log/upload tài liệu thật, Unicode Việt, bộ nhớ và fallback depth.
 Đã chốt: Flutter 3.47.7, Android build trước (ADR-0002); camera hệ thống, xử lý ảnh Dart, PDF bằng `pdf`,
 chia sẻ bằng `share_plus` (ADR-0003, spec P1 D1–D4). Còn mở: thiết bị, đường capture native/depth,
-OCR, giấy phép sản phẩm, Data Governance trước phát hành và benchmark trên thiết bị (P2).
+OCR, Data Governance trước phát hành và benchmark trên thiết bị (P2).
 Threat model bản 1 (`docs/THREAT-MODEL.md`), sổ dữ liệu (`docs/privacy/data-map.yaml`), sàng lọc DPIA (`docs/DPIA.md`) và sổ rủi ro
 (`docs/RISKS.md`) lập 2026-10-24, **chưa có chủ repo duyệt**.
 
