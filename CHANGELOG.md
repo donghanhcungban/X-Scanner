@@ -12,6 +12,8 @@ Chưa có app release: mọi mục nằm trong `[Unreleased]`. Ngày trong ngo�
 - Giữ hook commit đi qua dispatcher có khóa flock của X-Scanner khi nâng khung; test tích hợp gate đỏ chặn commit và vendor chỉ fallback (F-081).
 
 ### Changed
+- Mở mã theo giấy phép MIT (`LICENSE`, `NOTICE`), đóng RK-005; README thêm mục "Ủng hộ và liên hệ" (VietQR, hỗ trợ triển khai) và `.github/FUNDING.yml`.
+- Chủ repo chuyển sang `www-donghanhcungban-org`: bản quyền `LICENSE`/`NOTICE`, link README/SECURITY/SUPPORT/FUNDING, điều kiện `github.repository` của workflow adopt (trước đó workflow tự bỏ qua sau khi đổi chủ), script adopt và RUNBOOK; tham chiếu `seeker19110/projects-template` (chưa chuyển) và link PR/run cũ giữ nguyên.
 - Cập nhật X-Templates từ 2.0.0 lên stable 3.29.0 (tag v3.29.0), gộp harness giữ quyền/cổng X-Scanner và helpers hook cũ; thêm giấy phép nguồn. Gate Android local và CI đã PASS; UAT thư viện trên thiết bị vẫn mở.
 
 ### Security

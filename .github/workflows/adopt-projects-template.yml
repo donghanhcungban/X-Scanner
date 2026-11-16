@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   adopt:
-    if: github.repository == 'seeker19110/X-Scanner' && github.ref == 'refs/heads/main'
+    if: github.repository == 'www-donghanhcungban-org/X-Scanner' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:

@@ -2,7 +2,7 @@
 
 ## Trạng thái
 
-P1 scan và xuất đã merge (2026-10-12); AC-9 được root nghiệm thu trên emulator18/10 theo ủy quyền, agent thực hiện (bằng chứng `docs/ops/evidence/p1-android-uat-2026-10-18/ac9.json`). XS-09 thư viện nhiều tài liệu + migration P1 nối vào app ở #62 (2026-10-23); W-602/F-078 đã đạt trên emulator API 36 với fixture P1 dựng lại (bằng chứng `docs/ops/evidence/xs09-android-uat-2026-11-03.json`). Chủ dự án: @seeker19110.
+P1 scan và xuất đã merge (2026-10-12); AC-9 được root nghiệm thu trên emulator18/10 theo ủy quyền, agent thực hiện (bằng chứng `docs/ops/evidence/p1-android-uat-2026-10-18/ac9.json`). XS-09 thư viện nhiều tài liệu + migration P1 nối vào app ở #62 (2026-10-23); W-602/F-078 đã đạt trên emulator API 36 với fixture P1 dựng lại (bằng chứng `docs/ops/evidence/xs09-android-uat-2026-11-03.json`). Chủ dự án: @www-donghanhcungban-org.
 Đã duyệt ngày 2026-10-11: lưu nghiên cứu, áp dụng projects-template, stack ADR-0002, spec P0 nền và spec P1 scan và xuất.
 Mục tiêu sản phẩm: scan tài liệu, xuất PDF hoặc ảnh; nghiên cứu khoảng cách/depth để tăng chất lượng.
 Người dùng: người cần số hóa tài liệu; phân khúc cụ thể và nền tảng phát hành chưa chốt.
@@ -30,7 +30,7 @@ Các ngưỡng 95%, CER 2%, p95 2 giây, 100 trang, giảm chụp lại 15% chư
 
 ## Non-goals
 
-Không tự triển khai roadmap, phát hành, chọn license sản phẩm, thêm X-Agents,
+Không tự triển khai roadmap, phát hành, đổi license sản phẩm (MIT, chủ repo chọn 2026-11-16), thêm X-Agents,
 bắt buộc tài khoản/cloud/billing hoặc gọi AI API trả phí.
 
 ## Guardrails và quyết định mở
@@ -39,7 +39,7 @@ bắt buộc tài khoản/cloud/billing hoặc gọi AI API trả phí.
 không log/upload tài liệu thật, Unicode Việt, bộ nhớ và fallback depth.
 Đã chốt: Flutter 3.47.7, Android build trước (ADR-0002); camera hệ thống, xử lý ảnh Dart, PDF bằng `pdf`,
 chia sẻ bằng `share_plus` (ADR-0003, spec P1 D1–D4). Còn mở: thiết bị, đường capture native/depth,
-OCR, giấy phép sản phẩm, Data Governance trước phát hành và benchmark trên thiết bị (P2).
+OCR, Data Governance trước phát hành và benchmark trên thiết bị (P2).
 Threat model bản 1 (`docs/THREAT-MODEL.md`), sổ dữ liệu (`docs/privacy/data-map.yaml`), sàng lọc DPIA (`docs/DPIA.md`) và sổ rủi ro
 (`docs/RISKS.md`) lập 2026-10-24, **chưa có chủ repo duyệt**.
 
