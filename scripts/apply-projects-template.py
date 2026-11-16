@@ -112,7 +112,7 @@ Giấy phép sản phẩm chưa chọn; license nguồn giữ ở `third_party/p
 
 ## Trạng thái
 
-Greenfield / discovery. Chủ dự án: @seeker19110.
+Greenfield / discovery. Chủ dự án: @www-donghanhcungban-org.
 Đã duyệt ngày 2026-10-11: lưu nghiên cứu làm gợi ý và áp dụng projects-template.
 Mục tiêu sản phẩm: scan tài liệu, xuất PDF hoặc ảnh; nghiên cứu khoảng cách/depth để tăng chất lượng.
 Người dùng: người cần số hóa tài liệu; phân khúc cụ thể và nền tảng phát hành chưa chốt.
@@ -162,9 +162,9 @@ Release, tự merge, dịch vụ ngoài và tác vụ định kỳ chưa bật. 
         'CHANGELOG.md': '# Changelog — X-Scanner\n\n## Unreleased — 2026-10-11\n\n- Lưu nghiên cứu scan/PDF/ảnh/OCR/depth làm gợi ý.\n- Áp dụng projects-template, provenance, project brief và gate repository.\n\nChưa có app release.',
         'CONTRIBUTING.md': '# Đóng góp\n\nĐọc PROJECT.md, AGENTS.md và docs/framework/standard-delivery.md.\nMỗi thay đổi theo spec/Work ID; advisory không tự cấp phép triển khai.\nChạy doctor/gate, dùng worktree riêng và chỉ chia việc khi file/contract độc lập.\nKhông commit dữ liệu người dùng/secrets; báo đúng kiểm tra đã chạy và còn thiếu.',
         'SECURITY.md': '# Bảo mật\n\nChưa có app release. Không đưa giấy tờ, OCR, khóa truy cập hoặc chi tiết nhạy cảm vào issue public.\nDùng GitHub private reporting nếu đã bật; hiện chưa xác minh kênh riêng.\nNếu chưa có kênh riêng, chỉ yêu cầu maintainer mở kênh an toàn mà không công khai dữ liệu.',
-        'SUPPORT.md': '# Hỗ trợ\n\nGitHub Issues của seeker19110/X-Scanner cho câu hỏi không nhạy cảm.\nBảo mật: đọc SECURITY.md. Chưa có SLA hoặc phiên bản app được hỗ trợ.',
-        'GOVERNANCE.md': '# Quản trị\n\nMaintainer: @seeker19110. Quyết định qua PROJECT.md, spec và ADR.\nGợi ý không phải quyết định; mọi kiểm tra cần evidence, không tự phát hành hoặc bật dịch vụ ngoài.',
-        '.github/CODEOWNERS': '* @seeker19110',
+        'SUPPORT.md': '# Hỗ trợ\n\nGitHub Issues của www-donghanhcungban-org/X-Scanner cho câu hỏi không nhạy cảm.\nBảo mật: đọc SECURITY.md. Chưa có SLA hoặc phiên bản app được hỗ trợ.',
+        'GOVERNANCE.md': '# Quản trị\n\nMaintainer: @www-donghanhcungban-org. Quyết định qua PROJECT.md, spec và ADR.\nGợi ý không phải quyết định; mọi kiểm tra cần evidence, không tự phát hành hoặc bật dịch vụ ngoài.',
+        '.github/CODEOWNERS': '* @www-donghanhcungban-org',
         'docs/adr/0001-framework-adoption.md': f'''# ADR-0001: Áp dụng projects-template
 
 Date: 2026-10-11. Status: Accepted — framework adoption only.

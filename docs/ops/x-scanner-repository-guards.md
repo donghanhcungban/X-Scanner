@@ -35,7 +35,7 @@ working tree để không làm đổi snapshot trong lúc gate chạy.
 
 ```bash
 set -euo pipefail
-repo='seeker19110/X-Scanner'
+repo='www-donghanhcungban-org/X-Scanner'
 evidence_dir="$(mktemp -d /tmp/x-scanner-guards.XXXXXX)"
 gh api --paginate --slurp "repos/$repo/rulesets?includes_parents=false&per_page=100" \
   > "$evidence_dir/rulesets-before.json"

@@ -1,7 +1,7 @@
 # RISKS.md — sổ rủi ro X-Scanner
 
 > PM-RISK-001, PM-RISK-003, PM-RISK-006. Lập 2026-10-24 (Work ID `2026-10-24-governance-docs`) từ `PROJECT.md`, `PROGRESS.md`,
-> `docs/THREAT-MODEL.md`, spec §19 và code tại `edbdc50`. **Chủ** của mọi rủi ro là chủ repo (@seeker19110) vì dự án một người;
+> `docs/THREAT-MODEL.md`, spec §19 và code tại `edbdc50`. **Chủ** của mọi rủi ro là chủ repo (@www-donghanhcungban-org) vì dự án một người;
 > phiên AI chỉ đề xuất. Rà lại mỗi khi đóng một lát (slice) hoặc trước phát hành.
 > Xác suất/Ảnh hưởng: Thấp · TB · Cao. Cách ứng xử: tránh / giảm / chuyển / chấp nhận.
 
@@ -13,7 +13,7 @@
 | RK-002 | Mất ảnh gốc/tài liệu khi migration P1 hoặc khi app bị dừng giữa lúc lưu | TB | Cao | chủ repo | giảm | THREAT-MODEL TM-02: ghi nguyên tử, so byte, giữ `session.migrated*`; test `apps/mobile/test/storage/*` | báo lỗi "không chuyển được phiên cũ", người dùng mất trang | giảm trên host; chờ UAT APK có thư viện (W-602) | 2026-10-24 |
 | RK-003 | Lỗ hổng trong bộ giải mã ảnh (`image`) bị khai thác bằng ảnh dựng sẵn | TB | Cao | chủ repo | giảm | TM-01; ghim `image 4.12.0`, ngoại lệ chuỗi cung ứng EX-1 đã đóng (`docs/ops/supply-chain-exceptions.md`); dependency review CI | advisory mới cho `image`; crash/treo khi mở ảnh | giảm | 2026-10-24 |
 | RK-004 | Ảnh giấy tờ nhạy cảm lưu không mã hoá ở mức app | Thấp | Cao | chủ repo | chấp nhận có điều kiện | dựa vào mã hoá theo file của Android (TM-12) | chọn MAS-L2, phát hành, hoặc thêm OCR | mở — quyết định trước phát hành | 2026-10-24 |
-| RK-005 | Chưa chọn giấy phép sản phẩm → không phân phối/nhận đóng góp hợp lệ được | Cao | TB | chủ repo | tránh | non-goal hiện tại (`PROJECT.md`); README ghi trạng thái | trước phát hành hoặc khi có người muốn đóng góp | mở — chủ repo quyết | 2026-10-24 |
+| RK-005 | Chưa chọn giấy phép sản phẩm → không phân phối/nhận đóng góp hợp lệ được | Cao | TB | chủ repo | tránh | chủ repo chọn MIT 2026-11-16: `LICENSE`, `NOTICE`, README mục Giấy phép (Work ID `2026-11-16-open-source-donate`) | trước phát hành hoặc khi có người muốn đóng góp | đóng — đã chọn MIT | 2026-11-16 |
 | RK-006 | Chưa rõ nghĩa vụ theo Luật 91/2025/QH15, NĐ 356/2025/NĐ-CP, GDPR khi phát hành | TB | Cao | chủ repo | chuyển (luật sư) | `PROJECT.md` mục "Khung pháp lý", `docs/DPIA.md` sàng lọc | chọn kênh phát hành/đối tượng | mở — cần luật sư | 2026-10-24 |
 | RK-007 | Một người giữ mọi quyền (repo, CI, tương lai: khoá ký, cửa hàng); mất quyền truy cập = dự án dừng | TB | Cao | chủ repo | giảm | danh sách tài khoản và offboarding `docs/ops/RUNBOOK.md` §7–§8; CODEOWNERS | chủ repo vắng mặt/mất tài khoản | mở | 2026-10-24 |
 | RK-008 | iOS chưa từng build; khai báo nền tảng iOS có thể không chạy | Cao | TB | chủ repo | chấp nhận | ADR-0002: Android trước; không tuyên bố iOS chạy | chủ repo muốn phát hành iOS | chấp nhận | 2026-10-24 |

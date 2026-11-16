@@ -1,11 +1,11 @@
 ---
 title: RUNBOOK — X-Scanner
 updated: 2026-10-24
-owner: chủ repo (@seeker19110)
+owner: chủ repo (@www-donghanhcungban-org)
 last_drilled: chưa diễn tập
 ---
 
-# RUNBOOK — X-Scanner app Android · cập nhật 2026-10-24 · chủ: @seeker19110
+# RUNBOOK — X-Scanner app Android · cập nhật 2026-10-24 · chủ: @www-donghanhcungban-org
 
 > WF-DOC-008, PM-HANDOVER-002/005, OPS-IR-001/010, SEC-SECRET-011, CMP-AUDIT-010. Mẫu: `.xtemplates/framework/templates/RUNBOOK.md`.
 > Chỉ ghi **lệnh đang chạy được hôm nay**. Phần phát hành/rollback/ký số **chưa quyết định** và được đánh dấu như vậy;
@@ -18,7 +18,7 @@ last_drilled: chưa diễn tập
 |---|---|
 | Sản phẩm | App Flutter offline `apps/mobile`, Android trước (ADR-0002); **chưa phát hành**, chưa có người dùng thật |
 | Môi trường | không có server/staging/production; chỉ máy dev, CI GitHub Actions, emulator/thiết bị thử |
-| Repo / nhánh chính | https://github.com/seeker19110/X-Scanner · `main` (ruleset: PR + check `Framework and Android app gate`, không bypass — `docs/ops/x-scanner-repository-guards.md`) |
+| Repo / nhánh chính | https://github.com/www-donghanhcungban-org/X-Scanner · `main` (ruleset: PR + check `Framework and Android app gate`, không bypass — `docs/ops/x-scanner-repository-guards.md`) |
 | CI | workflow `Repository checks` (`.github/workflows/ci.yml`) |
 | Dashboard / log / trace | không có (app không có telemetry theo thiết kế) |
 | Kho secret | không có secret lúc chạy; CI không đọc secret riêng (chỉ `GITHUB_TOKEN` quyền `contents: read`, xem log run). Khoá ký phát hành: **chưa tồn tại** |
@@ -126,7 +126,7 @@ Làm sạch lịch sử Git chỉ khi chủ repo duyệt (ruleset cấm force-pu
 
 | Dịch vụ | Dùng để | Chủ / quyền | Ghi chú |
 |---|---|---|---|
-| GitHub repo `seeker19110/X-Scanner` | mã, issue, PR, ruleset | @seeker19110 (owner, CODEOWNERS `*`) | public; private vulnerability reporting **đang tắt** (2026-10-24) |
+| GitHub repo `www-donghanhcungban-org/X-Scanner` | mã, issue, PR, ruleset | @www-donghanhcungban-org (owner, CODEOWNERS `*`) | public; private vulnerability reporting **đang tắt** (2026-10-24) |
 | GitHub Actions | CI gate, artifact APK debug (14 ngày) | theo repo | runner `ubuntu-24.04` của GitHub |
 | Dependabot | PR nâng `pub` và Actions hằng tuần | theo repo | `.github/dependabot.yml`, `docs/ops/dependency-updates.md` |
 | pub.dev, Maven Central/Google Maven, storage.googleapis.com (Flutter SDK) | tải dependency/SDK | không cần tài khoản | ghim phiên bản + sha256 (ADR-0002) |
@@ -138,7 +138,7 @@ Làm sạch lịch sử Git chỉ khi chủ repo duyệt (ruleset cấm force-pu
 
 Tạo `docs/handover/offboarding-<tên>.md` từ checklist dưới, tick **trong ngày rời**, ghi ngày và người làm:
 
-- [ ] GitHub: gỡ khỏi collaborator/team của `seeker19110/X-Scanner` (Settings → Collaborators) — kiểm lại danh sách collaborator.
+- [ ] GitHub: gỡ khỏi collaborator/team của `www-donghanhcungban-org/X-Scanner` (Settings → Collaborators) — kiểm lại danh sách collaborator.
 - [ ] Gỡ khỏi CODEOWNERS nếu có tên; cập nhật người duyệt bắt buộc trong ruleset nếu đổi.
 - [ ] Thu hồi token/SSH key người đó dùng cho repo (nếu do dự án cấp); xoay mọi secret họ từng xem (§6).
 - [ ] Đóng hoặc chuyển giao PR/issue/worktree/nhánh đang mở; chuyển hồ sơ `docs/work/<id>/` đang `working.md`.
