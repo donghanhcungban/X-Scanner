@@ -1,7 +1,7 @@
 # Công việc: Mở mã MIT, thêm mục ủng hộ và hỗ trợ triển khai
 
 - Work ID: 2026-11-16-open-source-donate
-- Yêu cầu / outcome: chủ repo quyết định mở mã mọi repo cá nhân theo MIT (`Copyright (c) 2026 seeker19110`), thêm mục ủng hộ (VietQR Techcombank) và dịch vụ hỗ trợ triển khai (TP. HCM hoặc online). Đóng RK-005 (chưa chọn giấy phép sản phẩm).
+- Yêu cầu / outcome: chủ repo quyết định mở mã mọi repo cá nhân theo MIT (`Copyright (c) 2026 www-donghanhcungban-org` sau khi chuyển chủ repo), thêm mục ủng hộ (VietQR Techcombank) và dịch vụ hỗ trợ triển khai (TP. HCM hoặc online). Đóng RK-005 (chưa chọn giấy phép sản phẩm).
 - Trạng thái: In review
 - Chủ trì / writer: phiên chính; chủ repo duyệt và merge.
 - Mức rủi ro / số PR: S, một PR chỉ tài liệu/giấy phép, không đổi app, quyền Android, gate, CI hay dependency.

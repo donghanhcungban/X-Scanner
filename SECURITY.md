@@ -13,7 +13,7 @@ X-Scanner **chưa có bản phát hành**. Chỉ nhánh `main` mới nhất đư
 ## Báo lỗ hổng (kênh riêng)
 
 1. Dùng **GitHub Security Advisories**: tab **Security** của repo → **Report a vulnerability**
-   (https://github.com/seeker19110/X-Scanner/security/advisories/new). Báo cáo chỉ chủ repo và người được mời thấy.
+   (https://github.com/www-donghanhcungban-org/X-Scanner/security/advisories/new). Báo cáo chỉ chủ repo và người được mời thấy.
 2. **Không** mở issue/PR công khai mô tả chi tiết lỗ hổng, và **không** đính kèm ảnh giấy tờ thật, nội dung OCR, khoá truy cập
    hay dữ liệu cá nhân. Dùng ảnh/tài liệu tổng hợp để tái hiện.
 3. Nếu nút **Report a vulnerability** chưa hiện (tính năng private vulnerability reporting đang **tắt** khi kiểm ngày

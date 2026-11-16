@@ -36,7 +36,7 @@ Vận hành, UAT và việc chưa quyết định (phát hành, ký số): [RUNB
 
 ## Đóng góp và liên hệ
 
-- Báo lỗi, đề xuất, câu hỏi: mở [GitHub Issue](https://github.com/seeker19110/X-Scanner/issues) theo template; không đính kèm giấy tờ thật hay nội dung OCR.
+- Báo lỗi, đề xuất, câu hỏi: mở [GitHub Issue](https://github.com/www-donghanhcungban-org/X-Scanner/issues) theo template; không đính kèm giấy tờ thật hay nội dung OCR.
 - Lỗ hổng bảo mật: **không** mở issue công khai — xem [SECURITY.md](SECURITY.md).
 - Cách đóng góp, quy ước nhánh và PR: [CONTRIBUTING.md](CONTRIBUTING.md); ứng xử: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md); hỗ trợ: [SUPPORT.md](SUPPORT.md).
 
