@@ -6,7 +6,7 @@ updated: 2026-10-24
 
 # THREAT-MODEL — X-Scanner app Android offline · phiên bản 1 · 2026-10-24
 
-> Chủ: chủ repo (@seeker19110) · Lập: phiên AI theo Work ID `2026-10-24-governance-docs`, **chưa có người duyệt** ·
+> Chủ: chủ repo (@www-donghanhcungban-org) · Lập: phiên AI theo Work ID `2026-10-24-governance-docs`, **chưa có người duyệt** ·
 > Phạm vi: app `apps/mobile` tại commit `edbdc50` (P1 + thư viện XS-09), repo và CI · Ngoài phạm vi: iOS (chưa build),
 > OCR/depth/cloud (chưa có), bản phát hành ký số (chưa có quy trình). Mẫu: `.xtemplates/framework/templates/THREAT-MODEL.md`.
 > **Cập nhật file này** khi thêm ranh giới tin cậy mới: quyền Android mới, mạng, OCR, camera tự dựng, đồng bộ, phát hành.

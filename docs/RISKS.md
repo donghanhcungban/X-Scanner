@@ -1,7 +1,7 @@
 # RISKS.md — sổ rủi ro X-Scanner
 
 > PM-RISK-001, PM-RISK-003, PM-RISK-006. Lập 2026-10-24 (Work ID `2026-10-24-governance-docs`) từ `PROJECT.md`, `PROGRESS.md`,
-> `docs/THREAT-MODEL.md`, spec §19 và code tại `edbdc50`. **Chủ** của mọi rủi ro là chủ repo (@seeker19110) vì dự án một người;
+> `docs/THREAT-MODEL.md`, spec §19 và code tại `edbdc50`. **Chủ** của mọi rủi ro là chủ repo (@www-donghanhcungban-org) vì dự án một người;
 > phiên AI chỉ đề xuất. Rà lại mỗi khi đóng một lát (slice) hoặc trước phát hành.
 > Xác suất/Ảnh hưởng: Thấp · TB · Cao. Cách ứng xử: tránh / giảm / chuyển / chấp nhận.
 

@@ -1,11 +1,11 @@
 ---
 title: RUNBOOK — X-Scanner
 updated: 2026-10-24
-owner: chủ repo (@seeker19110)
+owner: chủ repo (@www-donghanhcungban-org)
 last_drilled: chưa diễn tập
 ---
 
-# RUNBOOK — X-Scanner app Android · cập nhật 2026-10-24 · chủ: @seeker19110
+# RUNBOOK — X-Scanner app Android · cập nhật 2026-10-24 · chủ: @www-donghanhcungban-org
 
 > WF-DOC-008, PM-HANDOVER-002/005, OPS-IR-001/010, SEC-SECRET-011, CMP-AUDIT-010. Mẫu: `.xtemplates/framework/templates/RUNBOOK.md`.
 > Chỉ ghi **lệnh đang chạy được hôm nay**. Phần phát hành/rollback/ký số **chưa quyết định** và được đánh dấu như vậy;
@@ -126,7 +126,7 @@ Làm sạch lịch sử Git chỉ khi chủ repo duyệt (ruleset cấm force-pu
 
 | Dịch vụ | Dùng để | Chủ / quyền | Ghi chú |
 |---|---|---|---|
-| GitHub repo `www-donghanhcungban-org/X-Scanner` | mã, issue, PR, ruleset | @seeker19110 (owner, CODEOWNERS `*`) | public; private vulnerability reporting **đang tắt** (2026-10-24) |
+| GitHub repo `www-donghanhcungban-org/X-Scanner` | mã, issue, PR, ruleset | @www-donghanhcungban-org (owner, CODEOWNERS `*`) | public; private vulnerability reporting **đang tắt** (2026-10-24) |
 | GitHub Actions | CI gate, artifact APK debug (14 ngày) | theo repo | runner `ubuntu-24.04` của GitHub |
 | Dependabot | PR nâng `pub` và Actions hằng tuần | theo repo | `.github/dependabot.yml`, `docs/ops/dependency-updates.md` |
 | pub.dev, Maven Central/Google Maven, storage.googleapis.com (Flutter SDK) | tải dependency/SDK | không cần tài khoản | ghim phiên bản + sha256 (ADR-0002) |
