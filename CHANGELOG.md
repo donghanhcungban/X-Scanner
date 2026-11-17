@@ -17,6 +17,7 @@ Chưa có app release: mọi mục nằm trong `[Unreleased]`. Ngày trong ngo�
 - Cập nhật X-Templates từ 2.0.0 lên stable 3.29.0 (tag v3.29.0), gộp harness giữ quyền/cổng X-Scanner và helpers hook cũ; thêm giấy phép nguồn. Gate Android local và CI đã PASS; UAT thư viện trên thiết bị vẫn mở.
 
 ### Security
+- (2026-11-16) Áp Dependabot #81: AGP 9.4.1 → 9.5.1, Gradle 9.8.1 → 9.8.2, ràng buộc Guava build-tool 33.7.2-jre → 33.8.0-jre; sinh lại `app/gradle.lockfile` và `settings-gradle.lockfile` (`--write-locks`). Chỉ đổi phiên bản công cụ build (lint, UTP, classpath plugin), bỏ `ddmlib` khỏi `androidLintTool`; classpath runtime của APK không đổi.
 - Constrain build-tool Guava to 33.7.2-jre for CVE-2026-102554, regenerate actual Gradle locks and remove obsolete AGP-only entries. APK runtime dependency graph stays unchanged; add three lockfile security regressions.
 
 
