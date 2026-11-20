@@ -116,3 +116,7 @@ Claude Code có thể thi hành các luật dưới đây bằng hook (`.claude/
 
 - `.mcp.json` — MCP server dùng chung cho agent có hỗ trợ MCP (Claude Code, Cursor, Codex CLI…); `.mcp.json.example` liệt kê server phổ biến (GitHub, filesystem, database) để bật khi dự án cần — không bật thứ dự án không dùng.
 - Agent không đọc được `.claude/hooks/*` (không phải Claude Code) thì mục "Hàng rào an toàn thủ công" ở trên chính là bản thay thế bắt buộc phải tự áp dụng.
+
+## /factory
+
+Dùng `/factory <yêu cầu>` cho vòng MVP → hoàn thiện → tối ưu. Lệnh dùng lại work ID, Flutter hot reload, test theo tệp và cổng Android của dự án. Hướng dẫn ở [.claude/skills/factory/SKILL.md](.claude/skills/factory/SKILL.md).
