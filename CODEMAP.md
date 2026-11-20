@@ -76,6 +76,10 @@ Hướng phụ thuộc: `ui` → `export`, `storage`, `imaging`, `core`; `export
 `.claude/hooks/_lib.sh`, quyền riêng và cổng Flutter. Kiểm `python3 .xtemplates/scripts/xt.py validate`,
 `python3 .xtemplates/scripts/xt.py doctor` rồi `bash scripts/dev-task.sh gate`.
 
+Chi tiết hai tối ưu CLI và vòng phản hồi Flutter bằng `/factory` nằm trong
+[hồ sơ tích hợp](docs/work/2026-11-20-factory-feedback/working.md). Hồi quy chạy cùng
+`python3 scripts/test-repo-checks.py`.
+
 ## Guava build-tool security
 
 Guava is constrained to the patched floor in `apps/mobile/android/settings.gradle.kts` (AGP/Kotlin classpath)

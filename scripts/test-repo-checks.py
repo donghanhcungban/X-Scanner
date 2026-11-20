@@ -5,6 +5,8 @@ Each check gets at least one fixture that must FAIL (exit 1) and one that must P
 that silently stops checking turns this suite red. Run: python3 scripts/test-repo-checks.py
 """
 
+import contextlib
+import io
 import json
 import os
 import re
@@ -14,6 +16,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 PY = sys.executable
@@ -70,6 +73,36 @@ class Tmp(unittest.TestCase):
 
     def tearDown(self):
         self._tmp.cleanup()
+
+
+class FactoryFeedback(Tmp):
+    @classmethod
+    def setUpClass(cls):
+        import importlib
+
+        with mock.patch.object(sys, "path", [str(ROOT / ".xtemplates/scripts"), *sys.path]):
+            cls.xt = importlib.import_module("xt")
+
+    def test_verify_normalizes_each_gate_once(self):
+        commands = ["echo ok", "false", "echo  ok", " echo 'bad", "echo 'bad ", "echo ok", "echo still"]
+        tasks = [{"id": str(i), "gate": cmd} for i, cmd in enumerate(commands)]
+        reasons = ["", "failed", "first", "invalid", "", "later", ""]
+        with (
+            mock.patch.object(self.xt, "canonical_command", wraps=self.xt.canonical_command) as normalize,
+            mock.patch.object(self.xt, "evidence_stale", side_effect=reasons),
+            mock.patch.object(self.xt, "run_gate_shell", side_effect=[(0, "ok"), (1, ""), (2, "")]) as run_gate,
+            contextlib.redirect_stdout(io.StringIO()),
+        ):
+            results = self.xt._verify_gates(self.tmp, tasks, 10, False)
+        self.assertEqual([call.args[0] for call in run_gate.call_args_list], [commands[0], commands[1], commands[3]])
+        self.assertEqual([r["exit_code"] for r in results], [0, 1, 2, 0])
+        self.assertEqual(results[0]["rerun"], "first")
+        self.assertTrue(results[-1]["kept"])
+        self.assertLessEqual(normalize.call_count, len(tasks))
+
+    def test_longest_test_first_in_each_shard(self):
+        weights = {"x": 10, "y": 1, "z": 3, "old": 2}
+        self.assertEqual(self.xt.shard_plan(["x", "y", "z", "new"], weights, 2), [["x"], ["z", "new", "y"]])
 
 
 class LinkCheck(Tmp):

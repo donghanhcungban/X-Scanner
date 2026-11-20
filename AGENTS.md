@@ -119,5 +119,4 @@ Claude Code có thể thi hành các luật dưới đây bằng hook (`.claude/
 
 ## /factory
 
-Dùng `/factory <yêu cầu>` để mở hoặc tiếp tục một vòng sản phẩm. Đọc trạng thái bằng
-`python3 .xtemplates/scripts/xt_flow.py --json` rồi chạy các cổng của dự án.
+Dùng `/factory <yêu cầu>` cho vòng MVP → hoàn thiện → tối ưu. Lệnh dùng lại work ID, Flutter hot reload, test theo tệp và cổng Android của dự án. Hướng dẫn ở [.claude/skills/factory/SKILL.md](.claude/skills/factory/SKILL.md).
