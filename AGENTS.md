@@ -116,3 +116,8 @@ Claude Code có thể thi hành các luật dưới đây bằng hook (`.claude/
 
 - `.mcp.json` — MCP server dùng chung cho agent có hỗ trợ MCP (Claude Code, Cursor, Codex CLI…); `.mcp.json.example` liệt kê server phổ biến (GitHub, filesystem, database) để bật khi dự án cần — không bật thứ dự án không dùng.
 - Agent không đọc được `.claude/hooks/*` (không phải Claude Code) thì mục "Hàng rào an toàn thủ công" ở trên chính là bản thay thế bắt buộc phải tự áp dụng.
+
+## /factory
+
+Dùng `/factory <yêu cầu>` để mở hoặc tiếp tục một vòng sản phẩm. Đọc trạng thái bằng
+`python3 .xtemplates/scripts/xt_flow.py --json` rồi chạy các cổng của dự án.
